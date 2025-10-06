@@ -148,7 +148,8 @@ interface ITaskItem {
 `getItems(): ITaskItem[]` - получение всех дел.  
 `checkItem(id: number): void` - отметка дела по переданному id как выполненное.  
 `getItemsCount(): number` - получение количества всех дел.  
-`getNotCompletedItemsCount(): number` - получение невыполненных дел.
+`getNotCompletedItemsCount(): number` - получение невыполненных дел.  
+`isCompleted(): boolean` - получение статуса выполненности дела по переданному id.
 
 ### Слой коммуникации
 
@@ -163,7 +164,9 @@ interface ITaskItem {
 
 Методы класса:  
 `getTasks() : Promise<ITaskItem[]>` - выполняет запрос на сервер с помощью метода get класса Api и возвращает с сервера массив дел.  
-`addTask(item: Partial<ITaskItem>): Promise<ITaskItem>` - отправляет на сервер данные о новом созданном деле, полученном в параметре.
+`addTask(item: Partial<ITaskItem>): Promise<ITaskItem>` - отправляет на сервер данные о новом созданном деле, полученном в параметре.  
+`deleteTask(item: Partial<ITaskItem>): Promise<ITaskItem>` - удаляет переданное дело с сервера.  
+`editTask(item: Partial<ITaskItem>): Promise<ITaskItem>` - редактирует переданные данные о деле на сервере.
 
 ### Слой представления данных
 

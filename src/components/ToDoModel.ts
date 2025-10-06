@@ -88,4 +88,11 @@ export class ToDoModel {
   getNotCompletedItemsCount(): number {
     return this.items.filter(item => !item.completed).length;
   }
+
+  isCompleted(id: number): boolean {
+    const item = this.items.find(item => item.id === id);
+
+    if (item) return item.completed;
+    else throw new Error(`Не найдено дело с id=${id}`);
+  }
 }
