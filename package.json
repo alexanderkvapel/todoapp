@@ -1,5 +1,6 @@
 {
   "name": "todoapp",
+  "homepage": "https://alexanderkvapel.github.io/todoapp",
   "version": "1.0.0",
   "main": "./src/index.ts",
   "description": "TO DO APP Project",
@@ -7,6 +8,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
