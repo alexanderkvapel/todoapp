@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+
+    <meta name="description" content="To Do App" />
+
+    <meta property="og:title" content="To Do App" />
+    <meta property="og:description" content="To Do App" />
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:url" content="" /> -->
+
+    <!-- <link rel="icon" href="./.ico" sizes="any" /> -->
+    <!-- <link rel="icon" href="./.svg" sizes="image/svg+xml"/> -->
+    <!-- <link rel="apple-touch-icon" href="./.png" /> -->
+
+    <title>To Do App</title>
+    <script type="module" crossorigin src="/assets/app-jWMqTz0G.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/app-Bvx4p4WG.css">
+  </head>
+
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <h1 class="header__title">Your To Do</h1>
+        <div class="header_statistics">
+          <p class="header_statistics__text">Your total todos: <span class="todos__total">0</span></p>
+          <p class="header_statistics__text">Your remaining todos: <span class="todos__remaining">0</span></p>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="todos">
+          <form name="todo-form" class="todos__form">
+            <input
+              type="text"
+              name="todo"
+              class="todos__input"
+              placeholder="Add new task"
+            />
+            <button type="submit" class="todos__submit-btn">
+              +
+            </button>
+            <span class="todos__error-message visually-hidden">Task title is required</span>
+          </form>
+
+          <ul class="todos__list"></ul>
+        </section>
+      </main>
+      
+      <footer class="footer">
+        <p class="footer__quote">"Doing what you love is the cornerstone of having abundance in your life." - Wayne Dyer</p>
+      </footer>
+    </div>
+
+    <!-- <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close"></button>
+        <div class="popup__content"></div>
+      </div>
+    </div> -->
+
+    <template id="todo-item-template">
+      <li class="todo-item">
+        <button class="todo-item__btn todo-item__flag-off"></button>
+        <span class="todo-item__text"></span>
+        <button class="todo-item__btn todo-item__copy"></button>
+        <button class="todo-item__btn todo-item__del"></button>
+      </li>
+    </template>
+
+  </body>
+</html>
