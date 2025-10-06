@@ -1,4 +1,5 @@
 # To Do App
+Потыкать приложение можно [тут](https://alexanderkvapel.github.io/todoapp/src/pages/index.html).
 
 Стек: HTML, CSS, TS, Vite
 
