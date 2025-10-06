@@ -1,0 +1,24 @@
+:root {
+  --bg-color: #1E1E1E;
+  --text-color: #E9E9E9;
+  --hover-color: #e7d914;
+  --active-color: #b7ac10;
+  --error-color: #d24f4f;
+
+  --flag-off-image: url('../images/unchecked-light.svg');
+  --flag-on-image: url('../images/checked-light.svg');
+  --copy-image: url('../images/copy-light.svg');
+  --delete-image: url('../images/delete-light.svg');
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #F5F5F5;
+    --text-color: #1E1E1E;
+
+    --flag-off-image: url('../images/unchecked-dark.svg');
+    --flag-on-image: url('../images/checked-dark.svg');
+    --copy-image: url('../images/copy-dark.svg');
+    --delete-image: url('../images/delete-dark.svg');
+  }
+}
