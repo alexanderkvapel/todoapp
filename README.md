@@ -3,31 +3,33 @@
 Стек: HTML, CSS, TS, Vite
 
 Структура проекта:
-todoapp/
- ├── src/                          // исходные файлы проекта
- │    ├── images/
- │    ├── pages/
- │    │    └── index.html          // HTML-файл главной страницы
- │    ├── components/              // папка с TS компонентами
- │    │    ├── base/               // папка с базовым кодом
- │    │    │    ├── Api.ts
- │    │    │    ├── Component.ts
- │    │    │    └── Events.ts
- │    │    ├── ToDoModel.ts
- │    │    ├── ToDoApi.ts
- │    │    ├── Item.ts
- │    │    ├── Form.ts
- │    │    └── Page.ts
- │    ├── styles/
- │    │    ├── styles.css          // корневой файл стилей
- │    │    ├── variables.css
- │    │    └── normalize.css
- │    ├── types/
- │    │    └── index.ts            // файл с типами
- │    ├── utils/
- │    │    ├── constants.ts        // файл с константами
- │    │    └── utils.ts            // файл с утилитами
+```
+todoapp/  
+ ├── src/                          // исходные файлы проекта  
+ │    ├── images/  
+ │    ├── pages/  
+ │    │    └── index.html          // HTML-файл главной страницы  
+ │    ├── components/              // папка с TS компонентами  
+ │    │    ├── base/               // папка с базовым кодом  
+ │    │    │    ├── Api.ts  
+ │    │    │    ├── Component.ts  
+ │    │    │    └── Events.ts  
+ │    │    ├── ToDoModel.ts  
+ │    │    ├── ToDoApi.ts  
+ │    │    ├── Item.ts  
+ │    │    ├── Form.ts  
+ │    │    └── Page.ts  
+ │    ├── styles/  
+ │    │    ├── styles.css          // корневой файл стилей  
+ │    │    ├── variables.css  
+ │    │    └── normalize.css  
+ │    ├── types/  
+ │    │    └── index.ts            // файл с типами  
+ │    ├── utils/  
+ │    │    ├── constants.ts        // файл с константами  
+ │    │    └── utils.ts            // файл с утилитами  
  │    └── index.ts                 // точка входа приложения
+```
 
  ## Установка и запуск
 Для установки и запуска проекта необходимо выполнить команды
